@@ -1,11 +1,29 @@
 .container {
-    width: 100%;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 
-    .wrapper {
-        width: 70%;
-        margin: 0 auto;
-    }
+  .wrapper {
+    width: 70%;
+    margin: 0 auto;
+  }
+}
+
+.bgDark {
+  background: #000000;
+  color: #f5f5f7;
+  transition: 0.2s;
+}
+
+.bgLight {
+  background: #f5f5f7;
+  color: #0e1111;
+  transition: 0.2s;
+}
+
+.bgBlue {
+  background: #272d70;
+  color: #f5f5f7;
+  transition: 0.2s;
 }

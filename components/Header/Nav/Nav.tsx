@@ -12,14 +12,10 @@ function Nav ({ children }: NavProps) {
     )
 }
 
-type NavTabProps = {
-    title: string;
-}
-
-function NavTab ({ title }: NavTabProps) {
+function NavTab ({ children }: NavProps) {
     return(
         <li className={Styles.navTab}>
-            {title}
+            {children}
         </li>
     )
 }

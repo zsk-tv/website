@@ -1,16 +1,19 @@
-$font-family: "Inter", -apple-webkit, "Segoe UI", "Helvetica Neue", "Arial", sans-serif;
+$font-family: "Inter", -apple-webkit, "Segoe UI", "Helvetica Neue", "Arial",
+  sans-serif;
 
-html, body {
-    padding: 0;
-    margin: 0;
+html,
+body {
+  padding: 0;
+  margin: 0;
 }
 
 html {
-    height: 100vh;
-    /* Pod animacje */
+  height: 100vh;
+  scroll-behavior: smooth;
 }
 
 body {
-    font-family: $font-family;
-    min-height: 100vh;
+  font-family: $font-family;
+  min-height: 100vh;
+  font-size: 1.1em;
 }

@@ -6,5 +6,16 @@ ul.nav {
 
     & li.navTab {
         font-weight: 800;
+
+        & a {
+            text-decoration: none;
+            transition: .2s;
+            color: inherit;
+
+            &:hover {
+                opacity: 0.7;
+                transition: .2s;
+            }
+        }
     }
 }
