@@ -9,10 +9,34 @@ $spotify: #1db954;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  column-gap: 1rem;
-  margin: 1.5rem 0;
+  column-gap: 0.5rem;
+  row-gap: 0.5rem;
+  margin: 1rem 0;
   width: 100%;
-  align-content: flex-start;
+
+  @media screen and (min-width: 320px) {
+    & {
+      margin: 0.5rem auto;
+    }
+  }
+
+  @media screen and (min-width: 720px) {
+    & {
+      margin: 0.5rem auto;
+    }
+  }
+
+  @media screen and (min-width: 1024px) {
+    & {
+      margin: 1rem 0;
+    }
+  }
+
+  @media screen and (min-width: 1280px) {
+    & {
+      margin: 1rem 0;
+    }
+  }
 
   & .linkCard {
     display: flex;
@@ -26,8 +50,8 @@ $spotify: #1db954;
     flex-grow: 1;
 
     & svg {
-      width: 50px;
-      height: 50px;
+      width: 40px;
+      height: 40px;
     }
 
     &.yt {
@@ -62,7 +86,14 @@ $spotify: #1db954;
 
       &:hover {
         color: $color-light;
-        background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+        background: radial-gradient(
+          circle at 30% 107%,
+          #fdf497 0%,
+          #fdf497 5%,
+          #fd5949 45%,
+          #d6249f 60%,
+          #285aeb 90%
+        );
         transition: $transition;
         border: 3px solid $bg-light;
       }

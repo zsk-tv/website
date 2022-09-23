@@ -42,10 +42,10 @@ function Index() {
         <p>Odwiedź również nasze social media!</p>
 
         <SocialLinks>
-          <SocialLink href="" platform="YouTube" />
-          <SocialLink href="" platform="Facebook" />
-          <SocialLink href="" platform="Instagram" />
-          <SocialLink href="" platform="Spotify" />
+          <SocialLink href="https://www.youtube.com/c/ZSKPozna%C5%84TV/" platform="YouTube" />
+          <SocialLink href="https://www.facebook.com/zsktvpoznan/" platform="Facebook" />
+          <SocialLink href="https://www.instagram.com/zsktv/" platform="Instagram" />
+          <SocialLink href="https://open.spotify.com/show/1ABTFfH3VN3yBpmzxE7LrS" platform="Spotify" />
         </SocialLinks>
       </Content>
     </Layout>
