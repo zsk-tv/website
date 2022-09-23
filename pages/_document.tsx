@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import Document, { Html, Head, Main, NextScript } from "next/document";
 
 class MainDocument extends Document {
@@ -12,6 +13,17 @@ class MainDocument extends Document {
           />
         </Head>
         <body>
+          {/* Google Tag Manager (noscript) 
+          <!--immediately after the opening <body> tag--> */}
+          <noscript>
+            <iframe
+              src="https://www.googletagmanager.com/ns.html?id=GTM-XXXXXXX"
+              height="0"
+              width="0"
+              style={{ display: "none", visibility: "hidden" }}
+            ></iframe>
+          </noscript>
+          {/* <!-- End Google Tag Manager (noscript) --> */}
           <Main />
           <NextScript />
         </body>
