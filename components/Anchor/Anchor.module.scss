@@ -1,0 +1,14 @@
+@import "../CSS/_variables.scss";
+
+a.anchor {
+    color: $anchor-color;
+    transition: $transition;
+    text-decoration: none;
+    margin: 2rem 0;
+    font-size: 1.2em;
+
+    &:hover {
+        transition: $transition;
+        text-decoration: underline;
+    }
+}

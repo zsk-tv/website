@@ -1,0 +1,43 @@
+@import "./_variables.scss";
+@import "../../node_modules/normalize.css/normalize.css";
+
+::-webkit-scrollbar {
+  width: 0.7rem;
+}
+
+::-webkit-scrollbar-track {
+  background: $bg-dark-alt;
+}
+
+::-webkit-scrollbar-thumb {
+  background: $bg-blue-alt;
+
+  &:hover {
+    background: $bg-blue-hover;
+  }
+}
+
+::-webkit-scrollbar-button {
+  background: $bg-dark-hover;
+
+  &:hover {
+    background: $bg-dark-alt;
+  }
+}
+
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: $font-family;
+  min-height: 100vh;
+  font-size: $font-size;
+}

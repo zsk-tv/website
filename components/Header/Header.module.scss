@@ -1,24 +1,27 @@
+@import "../CSS/_variables.scss";
+
 .header {
-  position: fixed;
+  position: sticky;
+  top: 0;
   z-index: 9999;
   width: 100%;
   padding: 1rem 0;
 
   .bgDark {
-    background: #000000;
-    color: #f5f5f7;
-    transition: 0.2s;
-  }
-
-  .bgLight {
-    background: #f5f5f7;
-    color: #0e1111;
-    transition: 0.2s;
+    background: $bg-dark;
+    color: $color-light;
+    transition: $transition;
   }
 
   .bgBlue {
-    background: #272d70;
-    color: #f5f5f7;
-    transition: 0.2s;
+    background: $bg-blue;
+    color: $color-light;
+    transition: $transition;
+  }
+
+  .bgLight {
+    background: $bg-light;
+    color: $color-dark;
+    transition: $transition;
   }
 }

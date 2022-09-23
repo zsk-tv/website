@@ -1,0 +1,83 @@
+@import "../../CSS/_variables.scss";
+
+$yt: #ee0f0f;
+$fb: #0b84ee;
+$ig: #d62976;
+$spotify: #1db954;
+
+.socialLinks {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  column-gap: 1rem;
+  margin: 1.5rem 0;
+  width: 100%;
+  align-content: flex-start;
+
+  & .linkCard {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding: 3rem;
+    border-radius: 1rem;
+    background: $bg-light;
+    transition: $transition;
+    flex-basis: auto;
+    flex-grow: 1;
+
+    & svg {
+      width: 50px;
+      height: 50px;
+    }
+
+    &.yt {
+      color: $yt;
+      border: 3px solid $yt;
+      transition: $transition;
+
+      &:hover {
+        color: $color-light;
+        background: $yt;
+        transition: $transition;
+      }
+    }
+
+    &.fb {
+      color: $fb;
+      border: 3px solid $fb;
+      transition: $transition;
+
+      &:hover {
+        color: $color-light;
+        background: $fb;
+        transition: $transition;
+      }
+    }
+
+    &.ig {
+      color: $ig;
+      border: 3px solid $ig;
+      background: $bg-light;
+      transition: $transition;
+
+      &:hover {
+        color: $color-light;
+        background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+        transition: $transition;
+        border: 3px solid $bg-light;
+      }
+    }
+
+    &.spotify {
+      color: $spotify;
+      border: 3px solid $spotify;
+      transition: $transition;
+
+      &:hover {
+        color: $color-light;
+        background: $spotify;
+        transition: $transition;
+      }
+    }
+  }
+}

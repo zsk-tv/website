@@ -10,10 +10,13 @@ type Props = {
 function Layout({ children }: Props) {
   const [layoutStyles, setStyles] = useState(Styles.bgDark);
 
-  const listenScrollEvent = () => {
-    if (window.scrollY < Math.round(window.innerHeight * 0.33)) {
+  const listenScrollEvent = (e: Event) => {
+    if (window.scrollY < Math.round(window.innerHeight * 0.4)) {
       setStyles(Styles.bgDark);
-    } else if (window.scrollY > Math.round(window.innerHeight * 0.33) && window.scrollY < Math.round(window.innerHeight)) {
+    } else if (
+      window.scrollY > Math.round(window.innerHeight * 0.7) &&
+      window.scrollY < Math.round(window.innerHeight * 1.3)
+    ) {
       setStyles(Styles.bgBlue);
     } else if (window.scrollY > Math.round(window.innerHeight)) {
       setStyles(Styles.bgLight);
@@ -27,10 +30,10 @@ function Layout({ children }: Props) {
 
   return (
     <div className={`${Styles.container} ${layoutStyles}`}>
-      <div className={`${Styles.wrapper}`}>
+      <div className={Styles.wrapper}>
         <Header className={`${layoutStyles}`} />
+        {children}
       </div>
-      <div className={Styles.wrapper}>{children}</div>
       <Footer />
     </div>
   );
