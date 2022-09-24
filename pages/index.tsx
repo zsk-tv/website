@@ -15,7 +15,7 @@ function Index() {
       <Content id="home">
         <h1>ZSK TV</h1>
         <p>
-          Jesteśmy kołem zainteresowań, które zrzesza zarówno miłośników
+          ZSKTV jest kołem zainteresowań, które zrzesza zarówno miłośników
           tworzenia i obróbki filmów oraz grafiki komputerowej, jak i tych,
           którzy są otwarci na nowe doświadczenia.
         </p>
