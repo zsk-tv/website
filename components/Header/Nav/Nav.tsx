@@ -2,11 +2,12 @@ import Styles from "./Nav.module.scss";
 
 type NavProps = {
     children: React.ReactNode | string;
+    className?: string;
 }
 
-function Nav ({ children }: NavProps) {
+function Nav ({ children, className }: NavProps) {
     return(
-        <ul className={Styles.nav}>
+        <ul className={`${Styles.nav} ${className}`}>
             {children}
         </ul>
     )

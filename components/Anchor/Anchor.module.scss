@@ -6,9 +6,18 @@ a.anchor {
     text-decoration: none;
     margin: 2rem 0;
     font-size: 1.2em;
+    display: flex;
+    flex-direction: row;
 
     &:hover {
         transition: $transition;
         text-decoration: underline;
+    }
+
+    & svg {
+        display: flex;
+        align-self: center;
+        height: 1em;
+        width: auto;
     }
 }

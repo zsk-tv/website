@@ -5,7 +5,12 @@
   top: 0;
   z-index: 9999;
   width: 100%;
-  padding: 0.5rem 0;
+  padding: 0.5rem 1.5rem;
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  align-items: center;
+  box-sizing: border-box;
 
   .bgDark {
     background: $bg-dark;
@@ -23,5 +28,123 @@
     background: $bg-light;
     color: $color-dark;
     transition: $transition;
+  }
+
+  .buttons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+
+    @media screen and (min-width: 320px) {
+      & {
+        width: 100%;
+      }
+    }
+
+    @media screen and (min-width: 720px) {
+      & {
+        width: 100%;
+      }
+    }
+
+    @media screen and (min-width: 1024px) {
+      & {
+        width: auto;
+      }
+    }
+
+    @media screen and (min-width: 1280px) {
+      & {
+        width: auto;
+      }
+    }
+  }
+
+  .hamburger {
+    cursor: pointer;
+
+    @media screen and (min-width: 320px) {
+      & {
+        display: flex;
+      }
+    }
+
+    @media screen and (min-width: 720px) {
+      & {
+        display: flex;
+      }
+    }
+
+    @media screen and (min-width: 1024px) {
+      & {
+        display: none;
+      }
+    }
+
+    @media screen and (min-width: 1280px) {
+      & {
+        display: none;
+      }
+    }
+  }
+
+  .expanded {
+    display: flex;
+  }
+
+  &:has(.expanded) {
+    flex-direction: column;
+  }
+
+  .collapsed {
+    @media screen and (min-width: 320px) {
+      & {
+        display: none !important;
+      }
+    }
+
+    @media screen and (min-width: 720px) {
+      & {
+        display: none !important;
+      }
+    }
+
+    @media screen and (min-width: 1024px) {
+      & {
+        display: flex !important;
+      }
+    }
+
+    @media screen and (min-width: 1280px) {
+      & {
+        display: flex !important;
+      }
+    }
+  }
+
+  @media screen and (min-width: 320px) {
+    & {
+      justify-content: space-between;
+    }
+  }
+
+  @media screen and (min-width: 720px) {
+    & {
+      justify-content: space-between;
+    }
+  }
+
+  @media screen and (min-width: 1024px) {
+    & {
+      justify-content: flex-start;
+    }
+  }
+
+  @media screen and (min-width: 1280px) {
+    & {
+      justify-content: flex-start;
+    }
   }
 }

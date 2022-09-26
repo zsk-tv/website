@@ -1,8 +1,10 @@
+@import "../../CSS/_variables.scss";
+
 ul.nav {
   list-style: none;
   display: flex;
-  flex-direction: row;
   width: 100%;
+  z-index: 9999;
 
   & li.navTab {
     font-weight: 800;
@@ -21,25 +23,33 @@ ul.nav {
 
   @media screen and (min-width: 320px) {
     & {
-      column-gap: 1.5rem;
+      column-gap: 0;
+      flex-direction: column;
+      position: sticky;
+      top: 0;
     }
   }
 
   @media screen and (min-width: 720px) {
     & {
-      column-gap: 1.5rem;
+      column-gap: 0;
+      flex-direction: column;
+      position: sticky;
+      top: 0;
     }
   }
 
   @media screen and (min-width: 1024px) {
     & {
       column-gap: 3rem;
+      flex-direction: row;
     }
   }
 
   @media screen and (min-width: 1280px) {
     & {
       column-gap: 3rem;
+      flex-direction: row;
     }
   }
 }
