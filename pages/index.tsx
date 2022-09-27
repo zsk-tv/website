@@ -5,7 +5,6 @@ import {
   Slider,
   SocialLink,
   SocialLinks,
-  Icon,
 } from "../components";
 
 function Index() {
