@@ -27,6 +27,7 @@ function Header({ className }: Props) {
           onClick={() => window.scrollTo(0, 0)}
           width="50"
           height="50"
+		  style={{ alignSelf: "center"}}
         >
           <path
             fill="currentColor"

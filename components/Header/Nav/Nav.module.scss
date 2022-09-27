@@ -23,19 +23,21 @@ ul.nav {
 
   @media screen and (min-width: 320px) {
     & {
-      column-gap: 0;
+      row-gap: 1rem;
       flex-direction: column;
       position: sticky;
       top: 0;
+      margin-top: 2rem;
     }
   }
 
   @media screen and (min-width: 720px) {
     & {
-      column-gap: 0;
+      row-gap: 1rem;
       flex-direction: column;
       position: sticky;
       top: 0;
+      margin-top: 2rem;
     }
   }
 
@@ -43,6 +45,7 @@ ul.nav {
     & {
       column-gap: 3rem;
       flex-direction: row;
+      margin: 0;
     }
   }
 
@@ -50,6 +53,7 @@ ul.nav {
     & {
       column-gap: 3rem;
       flex-direction: row;
+      margin: 0;
     }
   }
 }

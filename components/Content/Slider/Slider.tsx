@@ -1,21 +1,14 @@
 import { Slide } from "react-slideshow-image";
 import "react-slideshow-image/dist/styles.css";
 import Styles from "./Slider.module.scss";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowAltCircleRight } from "@fortawesome/free-regular-svg-icons/faArrowAltCircleRight";
-import { faArrowAltCircleLeft } from "@fortawesome/free-regular-svg-icons/faArrowAltCircleLeft";
 
 const props = {
   prevArrow: (
-    <button className={Styles.button}>
-      <FontAwesomeIcon icon={faArrowAltCircleLeft} />
-    </button>
+    <button className={Styles.button} />
   ),
   
   nextArrow: (
-    <button className={Styles.button}>
-      <FontAwesomeIcon icon={faArrowAltCircleRight} />
-    </button>
+    <button className={Styles.button} />
   ),
 };
 
