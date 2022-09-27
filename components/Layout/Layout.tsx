@@ -15,10 +15,10 @@ function Layout({ children }: Props) {
       setStyles(Styles.bgDark);
     } else if (
       window.scrollY > Math.round(window.innerHeight * 0.7) &&
-      window.scrollY < Math.round(window.innerHeight * 1.7)
+      window.scrollY < Math.round(window.innerHeight * 1.65)
     ) {
       setStyles(Styles.bgBlue);
-    } else if (window.scrollY > Math.round(window.innerHeight * 1.7)) {
+    } else if (window.scrollY < Math.round(window.innerHeight * 2)) {
       setStyles(Styles.bgLight);
     }
   };
