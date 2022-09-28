@@ -5,8 +5,6 @@ function LogoIcon(props: any) {
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 917 917"
       onClick={() => window.scrollTo(0, 0)}
-      width="50"
-      height="50"
       style={{ alignSelf: "center" }}
       {...props}
     >

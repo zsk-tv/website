@@ -5,9 +5,11 @@
     "@fortawesome/free-solid-svg-icons": "^6.2.0",
     "@fortawesome/react-fontawesome": "^0.2.0",
     "@types/react-gtm-module": "^2.0.1",
+    "embla-carousel-react": "^7.0.3",
     "next": "^12.3.0",
     "normalize.css": "^8.0.1",
     "react": "^18.2.0",
+    "react-alice-carousel": "^2.6.4",
     "react-dom": "^18.2.0",
     "react-gtm-module": "^2.0.11",
     "react-slideshow-image": "^4.0.5"

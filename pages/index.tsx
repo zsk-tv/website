@@ -5,17 +5,41 @@ import {
   Slider,
   SocialLink,
   SocialLinks,
+  LogoIcon,
 } from "../components";
 
 function Index() {
   return (
     <Layout>
       <Content id="home">
-        <h1>ZSK TV</h1>
+        <h1
+          style={{
+            display: "flex",
+            alignItems: "center",
+            flexDirection: "row",
+          }}
+        >
+          <LogoIcon
+            style={{
+              marginRight: "1rem",
+              borderRadius: "50%",
+              background: `linear-gradient(
+                135deg,
+                rgba(54, 29, 149, 1) 30%,
+                rgba(39, 21, 110, 1) 70%
+              )`,
+              padding: "0.2rem",
+            }}
+            height="70"
+            width="70"
+          />
+          ZSK TV
+        </h1>
         <p>
-          ZSK TV jest kołem zainteresowań, które zrzesza zarówno miłośników
-          tworzenia i obróbki filmów oraz grafiki komputerowej, jak i tych,
-          którzy są otwarci na nowe doświadczenia.
+          ZSK TV jest kołem zainteresowań, które zrzesza nie tylko miłośników
+          tworzenia i obróbki filmów oraz grafiki komputerowej, ale również
+          pasjonatów elektroniki, programowania, jak i tych, którzy są otwarci
+          na nowe doświadczenia.
         </p>
         <Anchor
           href="https://forms.office.com/r/KCpgSCtD6k"

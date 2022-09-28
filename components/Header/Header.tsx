@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Nav, NavTab } from "./Nav";
-import { LogoIcon }	from "./"
+import { LogoIcon } from "./";
 import Styles from "./Header.module.scss";
 
 type Props = {
@@ -21,7 +21,7 @@ function Header({ className }: Props) {
   return (
     <div className={`${Styles.header} ${className}`}>
       <div className={Styles.buttons}>
-		<LogoIcon className={Styles.logo}/>
+        <LogoIcon className={Styles.logo} width="50" height="50" />
         <a className={Styles.hamburger} onClick={handleHamburger}>
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -38,13 +38,19 @@ function Header({ className }: Props) {
       </div>
       <Nav className={expanded}>
         <NavTab>
-          <a href="#home">Home</a>
+          <a href="#home" aria-label="Home">
+            Home
+          </a>
         </NavTab>
         <NavTab>
-          <a href="#about">O nas</a>
+          <a href="#about" aria-label="O nas">
+            O nas
+          </a>
         </NavTab>
         <NavTab>
-          <a href="#sm">Social media</a>
+          <a href="#sm" aria-label="Social media">
+            Social media
+          </a>
         </NavTab>
       </Nav>
     </div>
