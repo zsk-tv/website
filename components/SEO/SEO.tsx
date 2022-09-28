@@ -30,14 +30,14 @@ function SEO() {
       <meta property="twitter:image" content="/images/logo-bg.png" />
 
       <meta property="og:site_name" content="zsktv.pl" />
-      <meta name="theme-color" content="#361D95" />
+      <meta name="theme-color" content="#272D70" />
 
       <meta name="robots" content="index, follow" />
       <meta name="googlebot" content="index, follow" />
       <meta name="HandheldFriendly" content="True" />
       <meta http-equiv="cleartype" content="on" />
       <meta name="apple-mobile-web-app-capable" content="yes" />
-      <meta name="apple-mobile-web-app-status-bar-style" content="#361D95" />
+      <meta name="apple-mobile-web-app-status-bar-style" content="#272D70" />
       <meta name="application-name" content="ZSK TV Poznań" />
       <meta
         name="msapplication-tooltip"
