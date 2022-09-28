@@ -29,7 +29,7 @@ function SEO() {
       />
       <meta property="twitter:image" content="/images/logo-bg.png" />
 
-      <meta property="og:site_name" content="dudek.ga" />
+      <meta property="og:site_name" content="zsktv.pl" />
       <meta name="theme-color" content="#ffffff" />
 
       <meta name="robots" content="index, follow" />
