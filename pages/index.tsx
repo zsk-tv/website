@@ -7,10 +7,12 @@ import {
   SocialLinks,
   LogoIcon,
 } from "../components";
+import { SEO } from "../components";
 
 function Index() {
   return (
     <Layout>
+      <SEO />
       <Content id="home">
         <h1
           style={{
