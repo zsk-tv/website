@@ -11,14 +11,14 @@ function Layout({ children }: Props) {
   const [layoutStyles, setStyles] = useState(Styles.bgDark);
 
   const listenScrollEvent = (e: Event) => {
-    if (window.scrollY < Math.round(window.innerHeight * 0.4)) {
+    if (window.scrollY < Math.round(window.innerHeight * 0.7)) {
       setStyles(Styles.bgDark);
     } else if (
       window.scrollY > Math.round(window.innerHeight * 0.7) &&
-      window.scrollY < Math.round(window.innerHeight * 1.3)
+      window.scrollY < Math.round(window.innerHeight * 1.6)
     ) {
       setStyles(Styles.bgBlue);
-    } else if (window.scrollY > Math.round(window.innerHeight)) {
+    } else {
       setStyles(Styles.bgLight);
     }
   };

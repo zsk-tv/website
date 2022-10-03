@@ -3,13 +3,9 @@ import "react-slideshow-image/dist/styles.css";
 import Styles from "./Slider.module.scss";
 
 const props = {
-  prevArrow: (
-    <button className={Styles.button} />
-  ),
-  
-  nextArrow: (
-    <button className={Styles.button} />
-  ),
+  prevArrow: <button className={Styles.button} />,
+
+  nextArrow: <button className={Styles.button} />,
 };
 
 function Slider() {
@@ -23,16 +19,13 @@ function Slider() {
     <div className={Styles.slider}>
       <Slide easing="ease" {...props}>
         <div className={Styles.slide}>
-          <div style={{ backgroundImage: `url(${images[0]})` }}>
-          </div>
+          <div style={{ backgroundImage: `url(${images[0]})` }}></div>
         </div>
         <div className={Styles.slide}>
-          <div style={{ backgroundImage: `url(${images[1]})` }}>
-          </div>
+          <div style={{ backgroundImage: `url(${images[1]})` }}></div>
         </div>
         <div className={Styles.slide}>
-          <div style={{ backgroundImage: `url(${images[2]})` }}>
-          </div>
+          <div style={{ backgroundImage: `url(${images[2]})` }}></div>
         </div>
       </Slide>
     </div>

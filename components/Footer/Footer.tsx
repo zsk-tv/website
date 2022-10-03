@@ -1,13 +1,11 @@
 import Styles from "./Footer.module.scss";
 
-function Footer () {
-    const copyYear = new Date().getFullYear();
-
-    return(
-        <div className={Styles.footer}>
-            &copy; {copyYear} - ZSKTV Poznań
-        </div>
-    )
+function Footer() {
+  return (
+    <div className={Styles.footer}>
+      &copy; {new Date().getFullYear()} - ZSK TV Poznań
+    </div>
+  );
 }
 
 export default Footer;
