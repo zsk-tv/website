@@ -35,7 +35,7 @@ function SEO() {
       <meta name="robots" content="index, follow" />
       <meta name="googlebot" content="index, follow" />
       <meta name="HandheldFriendly" content="True" />
-      <meta http-equiv="cleartype" content="on" />
+      <meta httpEquiv="cleartype" content="on" />
       <meta name="apple-mobile-web-app-capable" content="yes" />
       <meta name="apple-mobile-web-app-status-bar-style" content="#272D70" />
       <meta name="application-name" content="ZSK TV Poznań" />
@@ -43,7 +43,7 @@ function SEO() {
         name="msapplication-tooltip"
         content="Strona internetowa ZSK TV działającego w Zespole Szkół Komunikacji im. Hipolita Cegielskiego w Poznaniu"
       />
-      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
       <meta name="format-detection" content="telephone=no" />
       <meta name="format-detection" content="address=no" />
     </Head>
