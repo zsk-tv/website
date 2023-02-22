@@ -7,9 +7,9 @@ type Props = {
 
 function Content({ id, children }: Props) {
   return (
-    <div id={id} className={Styles.content}>
+    <section id={id} className={Styles.content}>
       {children}
-    </div>
+    </section>
   );
 }
 
