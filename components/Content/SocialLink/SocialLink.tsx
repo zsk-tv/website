@@ -10,7 +10,7 @@ type Props = {
   platform: string;
 };
 
-const  SocialLink = ({ href, platform }: Props) => {
+const SocialLink = ({ href, platform }: Props) => {
   return (
     <a href={href} aria-label={platform} target="_blank">
       <div

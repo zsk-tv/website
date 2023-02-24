@@ -5,7 +5,7 @@ type Props = {
   children: React.ReactNode | string;
 };
 
-function Content({ id, children }: Props) {
+const Content = ({ id, children }: Props) => {
   return (
     <section id={id} className={Styles.content}>
       {children}

@@ -1,6 +1,6 @@
 import Styles from "./Footer.module.scss";
 
-function Footer() {
+const Footer = () => {
   return (
     <div className={Styles.footer}>
       &copy; {new Date().getFullYear()} - ZSK TV Poznań

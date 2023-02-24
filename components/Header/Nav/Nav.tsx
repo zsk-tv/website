@@ -5,7 +5,7 @@ type NavProps = {
     className?: string;
 }
 
-function Nav ({ children, className }: NavProps) {
+const Nav = ({ children, className }: NavProps) => {
     return(
         <ul className={`${Styles.nav} ${className}`}>
             {children}
@@ -13,7 +13,7 @@ function Nav ({ children, className }: NavProps) {
     )
 }
 
-function NavTab ({ children }: NavProps) {
+const NavTab = ({ children }: NavProps) => {
     return(
         <li className={Styles.navTab}>
             {children}

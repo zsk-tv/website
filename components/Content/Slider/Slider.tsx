@@ -8,7 +8,7 @@ const props = {
   nextArrow: <button className={Styles.button} />,
 };
 
-function Slider() {
+const Slider = () => {
   const images = [
     "/images/slide1.jpg",
     "/images/slide2.jpg",

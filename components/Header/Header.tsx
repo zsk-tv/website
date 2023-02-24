@@ -7,7 +7,7 @@ type Props = {
   className?: string;
 };
 
-function Header({ className }: Props) {
+const Header = ({ className }: Props) => {
   const [expanded, setExpanded] = useState(Styles.collapsed);
 
   const handleHamburger = () => {

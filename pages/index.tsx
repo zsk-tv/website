@@ -9,7 +9,7 @@ import {
 } from "../components";
 import { SEO } from "../components";
 
-function Index() {
+const Index = () => {
   return (
     <Layout>
       <SEO />

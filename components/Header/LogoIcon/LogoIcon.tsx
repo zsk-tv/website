@@ -1,4 +1,4 @@
-function LogoIcon(props: any) {
+const LogoIcon = (props: any) => {
   return (
     <svg
       version="1.1"

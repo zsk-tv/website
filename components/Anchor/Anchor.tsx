@@ -8,13 +8,13 @@ type Props = {
   className?: string | undefined;
 };
 
-function Anchor({
+const Anchor = ({
   children,
   href,
   ariaLabel,
   target,
   className,
-}: Props): JSX.Element {
+}: Props): JSX.Element => {
   return (
     <a
       href={href}

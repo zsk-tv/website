@@ -7,7 +7,7 @@ type Props = {
     className: string;
 }
 
-function NavLink ({ children, href, className }: Props) {
+const NavLink = ({ children, href, className }: Props) => {
     const router = useRouter();
     const isActive = router.asPath === href || router.pathname.startsWith(href);
     

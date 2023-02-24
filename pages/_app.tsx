@@ -7,7 +7,7 @@ import { NextUIProvider } from "@nextui-org/react";
 
 const GTM_ID: string = "G-LQ8851E18Y";
 
-function App({ Component, pageProps }: AppProps) {
+const App = ({ Component, pageProps }: AppProps) => {
   useEffect(() => {
     TagManager.initialize({ gtmId: GTM_ID });
   }, []);

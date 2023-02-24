@@ -1,6 +1,6 @@
 import Head from "next/head";
 
-function SEO() {
+const SEO = () => {
   return (
     <Head>
       <title>ZSK TV Poznań</title>
