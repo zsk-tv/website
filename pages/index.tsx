@@ -1,104 +1,129 @@
-import {
-  Layout,
-  Content,
-  Anchor,
-  Slider,
-  SocialLink,
-  SocialLinks,
-  LogoIcon,
-} from "../components";
+import { Layout, Content, Slider } from "../components";
+import { CardsSocial, CardsGithub } from "../components/Content/Cards";
+import { Text, Grid, Button, Modal, useModal } from "@nextui-org/react";
 import { SEO } from "../components";
 
 const Index = () => {
+  const { setVisible, bindings } = useModal();
+
   return (
     <Layout>
       <SEO />
       <Content id="home">
-        <h1
-          style={{
-            display: "flex",
-            alignItems: "center",
-            flexDirection: "row",
+        <Text
+          h1
+          size={60}
+          css={{
+            textGradient: "45deg, #E2B0FF -50%, #9F44D3 100%",
           }}
+          weight="bold"
         >
-          <LogoIcon
-            style={{
-              marginRight: "1rem",
-              borderRadius: "50%",
-              background: `linear-gradient(
-                135deg,
-                rgba(54, 29, 149, 1) 30%,
-                rgba(39, 21, 110, 1) 70%
-              )`,
-              padding: "0.2rem",
-            }}
-            height="70"
-            width="70"
-          />
           ZSK TV
-        </h1>
-        <p>
+        </Text>
+        <Text h4 size={35} weight="bold">
           ZSK TV jest kołem zainteresowań, które zrzesza nie tylko miłośników
           tworzenia i obróbki filmów oraz grafiki komputerowej, ale również
           pasjonatów elektroniki, programowania, jak i tych, którzy są otwarci
           na nowe doświadczenia.
-        </p>
-        <Anchor
+        </Text>
+        <a
           href="https://forms.office.com/r/KCpgSCtD6k"
-          ariaLabel="Microsoft Forms"
           target="_blank"
+          aria-label="Microsoft Forms - formularz rekrutacyjny"
+          style={{
+            marginTop: "1.2rem",
+          }}
         >
-          <svg
-            aria-hidden="true"
-            focusable="false"
-            data-prefix="far"
-            data-icon="circle-right"
-            role="img"
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 512 512"
+          <Button
+            size="xl"
+            css={{
+              linearGradient: "45deg, #E2B0FF -50%, #9F44D3 100%",
+            }}
           >
-            <path
-              fill="currentColor"
-              d="M280.2 150.2C273.1 143.8 262.1 142.2 254.3 146.1S239.1 158.5 239.1 167.1l.002 56L152 224C138.8 224 128 234.8 128 248v16C128 277.3 138.8 288 152 288L240 287.1v56c0 9.531 5.656 18.16 14.38 22c8.75 3.812 18.91 2.094 25.91-4.375l96-88.75C381.2 268.3 384 261.9 384 255.2c-.3125-7.781-2.875-13.25-7.844-17.75L280.2 150.2zM256 0C114.6 0 0 114.6 0 256s114.6 256 256 256s256-114.6 256-256S397.4 0 256 0zM256 464c-114.7 0-208-93.31-208-208S141.3 48 256 48s208 93.31 208 208S370.7 464 256 464z"
-            ></path>
-          </svg>
-          &nbsp; Dołącz do nas!
-        </Anchor>
+            Dołącz do nas!
+          </Button>
+        </a>
       </Content>
       <Content id="about">
-        <h1>O nas</h1>
-        <p>
+        <Text
+          h1
+          size={60}
+          css={{
+            textGradient: "45deg, #7bf233 -50%, #2C8500 100%",
+          }}
+          weight="bold"
+        >
+          O nas
+        </Text>
+        <Text h4 size={35} weight="bold">
           Jesteśmy zespołem amatorów sztuki filmowej, ale również uczniami ZSK w
           Poznaniu. Każdy z nas ma inne hobby, wzbogaca nasz team tym, co cenimy
           najbardziej - różnorodnością.
-        </p>
-        <Slider />
+        </Text>
+        <Button
+          size="xl"
+          css={{
+            linearGradient: "45deg, #7bf233 -50%, #2C8500 100%",
+            width: "fit-content",
+            marginTop: "1.2rem",
+          }}
+          onPress={() => setVisible(true)}
+        >
+          Otwórz galerię
+        </Button>
+        <Modal
+          scroll
+          fullScreen
+          closeButton
+          aria-labelledby="modal-title"
+          aria-describedby="modal-description"
+          {...bindings}
+        >
+          <Modal.Header>
+            <Text id="modal-title" size={35} weight="bold">
+              Galeria
+            </Text>
+          </Modal.Header>
+          <Modal.Body>
+            <Slider />
+          </Modal.Body>
+        </Modal>
+      </Content>
+      <Content id="github">
+        <Text
+          h1
+          size={60}
+          css={{
+            textGradient: "45deg, #FFFFFF -50%, #4d5e69 100%",
+          }}
+          weight="bold"
+        >
+          GitHub
+        </Text>
+        <Text h4 size={35} weight="bold">
+          Sprawdź nasze projekty na GitHubie!
+        </Text>
+        <CardsGithub />
       </Content>
       <Content id="sm">
-        <h1>Social media</h1>
-        <p>Odwiedź również nasze social media!</p>
+        <Text
+          h1
+          size={60}
+          css={{
+            textGradient: "45deg, #F9B980 -50%, #D82998 100%",
+          }}
+          weight="bold"
+        >
+          Social media
+        </Text>
+        <Text h4 size={35} weight="bold">
+          Odwiedź również nasze social media!
+        </Text>
 
-        <SocialLinks>
-          <SocialLink
-            href="https://www.youtube.com/c/ZSKPozna%C5%84TV/"
-            platform="YouTube"
-          />
-          <SocialLink
-            href="https://www.facebook.com/zsktvpoznan/"
-            platform="Facebook"
-          />
-          <SocialLink
-            href="https://www.instagram.com/zsktv/"
-            platform="Instagram"
-          />
-          <SocialLink
-            href="https://open.spotify.com/show/1ABTFfH3VN3yBpmzxE7LrS"
-            platform="Spotify"
-          />
-        </SocialLinks>
+        <CardsSocial />
       </Content>
     </Layout>
   );
-}
+};
 
 export default Index;

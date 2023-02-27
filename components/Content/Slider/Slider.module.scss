@@ -2,11 +2,12 @@
 
 .slider {
   width: $width;
+  align-items: center;
 
   @media screen and (min-width: 320px) {
     & {
       width: 100%;
-      height: calc((100% / 16) * 9);
+      height: 100%;
     }
   }
 
@@ -36,6 +37,8 @@
     align-items: center;
     justify-content: center;
     background-size: cover;
+    border-radius: 18px;
+    align-self: center;
 
     @media screen and (min-width: 320px) {
       & {
@@ -53,16 +56,16 @@
 
     @media screen and (min-width: 1024px) {
       & {
-        height: 600px;
-        width: calc(round((600px / 9) * 16));
+        height: 800px;
+        width: calc(round((800px / 9) * 16));
         margin: 0 auto;
       }
     }
 
     @media screen and (min-width: 1280px) {
       & {
-        height: 600px;
-        width: calc(round((600px / 9) * 16));
+        height: 800px;
+        width: calc(round((800px / 9) * 16));
         margin: 0 auto;
       }
     }

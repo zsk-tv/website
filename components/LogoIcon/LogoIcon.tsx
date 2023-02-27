@@ -196,6 +196,6 @@ z"
       />
     </svg>
   );
-}
+};
 
-export default LogoIcon;
+export { LogoIcon };

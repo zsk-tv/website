@@ -5,6 +5,15 @@
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  -webkit-backdrop-filter: saturate(180%) blur(20px);
+  backdrop-filter: saturate(180%) blur(20px);
+  background: rgba(0, 0, 0, 0.85);
+
+  .gradients {
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+  }
 
   .wrapper {
     margin: 0 auto;
@@ -14,19 +23,19 @@
         width: 100%;
       }
     }
-  
+
     @media screen and (min-width: 720px) {
       & {
         width: 100%;
       }
     }
-  
+
     @media screen and (min-width: 1024px) {
       & {
         width: $width;
       }
     }
-  
+
     @media screen and (min-width: 1280px) {
       & {
         width: $width;

@@ -22,13 +22,17 @@ class MainDocument extends Document {
             href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
             rel="stylesheet"
           />
+          <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css"
+          />
         </Head>
         <body>
           {/* Google Tag Manager (noscript) 
           <!--immediately after the opening <body> tag--> */}
           <noscript>
             <iframe
-              src="https://www.googletagmanager.com/ns.html?id=GTM-XXXXXXX"
+              src="https://www.googletagmanager.com/ns.html?id=GTM-LQ8851E18Y"
               height="0"
               width="0"
               style={{ display: "none", visibility: "hidden" }}
