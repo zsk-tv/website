@@ -10,7 +10,7 @@ const CardsSocial = () => {
     <Grid.Container gap={0.5} justify="center" css={{ margin: "1.2rem 0" }}>
       <Grid xs={12} sm={3}>
         <a
-          href="https://www.youtube.com/c/ZSKPozna%C5%84TV/"
+          href="https://www.youtube.com/c/ZSKPoznańTV/"
           aria-label="YouTube"
           target="_blank"
           style={{ width: "100%" }}
@@ -30,7 +30,7 @@ const CardsSocial = () => {
               >
                 <FontAwesomeIcon
                   icon={faYoutube}
-                  style={{ width: "23px", height: "23px", margin: "0 10px" }}
+                  style={{ width: "40px", height: "40px", margin: "0 10px" }}
                 />
                 ZSK Poznań
               </Text>
@@ -60,7 +60,7 @@ const CardsSocial = () => {
               >
                 <FontAwesomeIcon
                   icon={faFacebook}
-                  style={{ width: "23px", height: "23px", margin: "0 10px" }}
+                  style={{ width: "40px", height: "40px", margin: "0 10px" }}
                 />
                 zsktvpoznan
               </Text>
@@ -94,7 +94,7 @@ const CardsSocial = () => {
               >
                 <FontAwesomeIcon
                   icon={faInstagram}
-                  style={{ width: "23px", height: "23px", margin: "0 10px" }}
+                  style={{ width: "40px", height: "40px", margin: "0 10px" }}
                 />
                 @zsktv
               </Text>
@@ -124,7 +124,7 @@ const CardsSocial = () => {
               >
                 <FontAwesomeIcon
                   icon={faSpotify}
-                  style={{ width: "23px", height: "23px", margin: "0 10px" }}
+                  style={{ width: "40px", height: "40px", margin: "0 10px" }}
                 />
                 ZSK podcast
               </Text>
