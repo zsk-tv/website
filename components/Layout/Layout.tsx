@@ -18,25 +18,26 @@ const Layout = ({ children }: Props) => {
   const listenScrollEvent = () => {
     setScrollPercent(getScrollPercent());
 
-    const elementHtml = document.documentElement;
+    const { documentElement } = document;
 
     setGradientAngle(
       (Math.pow(Math.cbrt(Math.pow(scrollPercent, 2)), 2) *
         Math.floor(
-          Math.cos(elementHtml.clientWidth * elementHtml.clientHeight) / 10
+          Math.cos(documentElement.clientWidth * documentElement.clientHeight) /
+            10
         )) %
         360
     );
 
-    if (scrollPercent < 25) {
-      setGradient(gradients.home);
-    } else if (scrollPercent >= 25 && scrollPercent < 50) {
-      setGradient(gradients.about);
-    } else if (scrollPercent >= 50 && scrollPercent < 75) {
-      setGradient(gradients.github);
-    } else if (scrollPercent >= 75 && scrollPercent < 100) {
-      setGradient(gradients.sm);
-    }
+    scrollPercent < 25
+      ? setGradient(gradients.home)
+      : scrollPercent >= 25 && scrollPercent < 50
+      ? setGradient(gradients.about)
+      : scrollPercent >= 50 && scrollPercent < 75
+      ? setGradient(gradients.github)
+      : scrollPercent >= 75 && scrollPercent < 100
+      ? setGradient(gradients.sm)
+      : setGradient(gradients.home);
   };
 
   useEffect(() => {

@@ -1,6 +1,4 @@
-import { Layout } from "../components";
-import { SEO } from "../components";
-
+import { Layout, SEO } from "../components";
 import { Home, About, Github, SocialMedia } from "../components/Sections";
 
 const Index = () => {

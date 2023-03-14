@@ -1,6 +1,6 @@
 import Head from "next/head";
 
-const SEO = () => {
+export const SEO = () => {
   return (
     <Head>
       <title>ZSK TV Poznań</title>
@@ -48,6 +48,4 @@ const SEO = () => {
       <meta name="format-detection" content="address=no" />
     </Head>
   );
-}
-
-export default SEO;
+};

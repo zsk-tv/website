@@ -1,13 +1,10 @@
-const getScrollPercent = () => {
-  const elementHtml = document.documentElement;
-  const elementBody = document.body;
+export const getScrollPercent = () => {
+  const { documentElement, body } = document;
 
   return (
-    ((elementHtml.scrollTop || elementBody.scrollTop) /
-      ((elementHtml.scrollHeight || elementBody.scrollHeight) -
-        elementHtml.clientHeight)) *
+    ((documentElement.scrollTop || body.scrollTop) /
+      ((documentElement.scrollHeight || body.scrollHeight) -
+        documentElement.clientHeight)) *
     100
   );
 };
-
-export { getScrollPercent };
